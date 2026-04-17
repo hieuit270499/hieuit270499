@@ -35,6 +35,6 @@ workflows:
     jobs:
       - test-php
       - description
-    # - deploy:
-    #     requires:
-    #       - test-php
+      - deploy:
+          requires:
+            - test-php
